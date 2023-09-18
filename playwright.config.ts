@@ -27,9 +27,7 @@ export default defineConfig({
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
-    /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
+    headless: true,
     baseURL: 'http://eaapp.somee.com',
     browserName: 'firefox',
     actionTimeout: 0,
@@ -44,7 +42,7 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { 
-        headless: false,
+        headless: true,
         video: 'on',
         screenshot: 'only-on-failure',
         ...devices['Desktop Chrome'] },
