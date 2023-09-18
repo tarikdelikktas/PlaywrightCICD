@@ -8,50 +8,42 @@ test.beforeEach(async ({page}) => {
 });
 
 test('Navigate to Launge of Warehouse website', async ({page}) => {
-    //navigate thewarehouse.co.nz
-
     //hover
-    var catagoty = await page.locator("data-test-id=category-root");
-    catagoty.hover();
+    await page.getByTestId("category-root").hover();
 
-    //verify if category is visibile or not
-    await expect(catagoty).toBeVisible();
-
-    // hover the category
-    await page.locator('.mega-menu-root-list > li > #category-homegarden').hover(); // use chain operation
+    const homegarden = await page
+        .getByRole('list')
+        .filter({ hasText: 'Winter Shopping Clothing, Shoes & Accessories' })
+        .getByRole('link', { name: 'Home, Garden & Appliances' }).first();
     
-    // click the category
-    await page.locator('a[role="menuitem"]:has-text("Lounge")').click();  // click operation
+    await homegarden.hover();
+    
+    await expect.soft(homegarden).toHaveId("category-homegarden");
 
-    //Verify the Launge Header text after click on the locater
-    var title = await page.locator("h1.title").textContent();
+    await page.getByRole('menuitem', { name: 'Lounge' }).click();
 
-    expect(title).toBe("Lounge");
-    await expect(page.locator("h1.title")).toHaveText("Lounge");
+    await expect.soft(homegarden).not.toBeVisible();
+    await expect.soft(homegarden).toBeHidden();
+
+    await expect.soft(page.getByRole('heading', { name: 'Lounge' })).toHaveText("Lounge");
+    await expect.soft(page).toHaveTitle("Lounge Suite - Lounge Couches | The Warehouse");
+});
+
+test("Navigating to Launge of Warehouse website - 2", async ({ page }) => {
+    //hover
+    await page.locator("data-test-id=category-root").hover();
+    await page.locator('.mega-menu-wrapper >> #category-homegarden').first().hover();
+
+    await page.locator('a[role="menuitem"]:has-text("Lounge")').click();
+    await expect(page.locator('.mega-menu-wrapper >> #category-homegarden').first()).not.toBeVisible();
+
+    await expect(page.locator('.mega-menu-wrapper >> #category-homegarden').first()).toBeHidden();
+
+    await expect(await page.locator(".title")).toHaveText("Lounge");
+
     await expect(page).toHaveTitle("Lounge Suite - Lounge Couches | The Warehouse");
 });
 
-test('Verify the identifieries for "#mega-menu-category-homegarden" and category-id attr', async ({page}) => {
-    // what if the team added those two attr into the mega-menu parent and you need to verify them..
-    await page.locator("data-test-id=category-root").hover();
-    await expect(page.locator('.mega-menu-root-list > li > #category-homegarden')).toHaveAttribute("data-target", "#mega-menu-category-homegarden");
-    await expect(page.locator('.mega-menu-root-list > li > #category-homegarden')).toHaveId("category-homegarden");
-
-}); 
-
-test('Negative test case for mega-menu-list is not visible when clicks on menuitem', async ({page}) => {
-    // what if we want to a negative test case scenior; for example, 
-    // once I click on home-category menu, then I want to mega-menu-list to be not available or not visible..
-        // there are 2 ways to do it.. 
-    await expect(page.locator('.mega-menu-root-list > li > #category-homegarden')).not.toBeVisible();
-    await expect(page.locator('.mega-menu-root-list > li > #category-homegarden')).toBeHidden();
-});
-
-test('Add soft assertipm to verify errors are captured by screenshot and video recording', async ({page}) => {
-    await page.locator("data-test-id=category-root").hover();
-    await expect.soft(page.locator('.mega-menu-root-list > li > #category-homegarden')).toHaveAttribute("data-targets", "#mega-menu-category-homegarden"); 
-});
-
-test.afterEach(async ({page}) => {
-    await page.screenshot({path: 'screenshot/warehouse.png'});
+test.afterEach(async ({ page }, testInfo) => {
+    await page.screenshot({path: `screenshot/${testInfo.title.trim()}.png`});
 });

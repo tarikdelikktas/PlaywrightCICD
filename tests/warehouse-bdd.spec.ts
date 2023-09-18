@@ -47,10 +47,8 @@ test.describe.parallel("Test Navigatiom to Launge of Warehouse website",async ()
 
         await test.step("Hovering over category root", async () => {
 
-            var categoryRoot = await page.locator("data-test-id=category-root");
-
-            categoryRoot.hover();
-            await page.locator('.mega-menu-wrapper >> #category-autodiy').hover();
+            await page.locator("data-test-id=category-root").hover();
+            await page.locator('.mega-menu-wrapper >> #category-autodiy').first().hover();
         });
 
 
