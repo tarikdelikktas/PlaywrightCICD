@@ -1,0 +1,276 @@
+{
+  "config": {
+    "configFile": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/playwright.config.ts",
+    "rootDir": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3,
+      "totalTime": 14856.544
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/node_modules/allure-playwright/dist/index.js",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.37.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "eaapp.spec.ts",
+      "file": "eaapp.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 11376,
+                  "error": {
+                    "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\n    at /Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts:35:22",
+                    "location": {
+                      "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                      "column": 22,
+                      "line": 35
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m   \u001b[90m// Click text=Save\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Save'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/Employee/Index/1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[90m// Click text=Log off\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Log off'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                        "column": 22,
+                        "line": 35
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 33 |\u001b[39m   \u001b[90m// Click text=Save\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Save'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/Employee/Index/1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[90m// Click text=Log off\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Log off'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts:35:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-09-18T06:09:42.329Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/test-results/eaapp-test-chromium/video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/test-results/eaapp-test-chromium/test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                    "column": 22,
+                    "line": 35
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9aa4ae6f64de732190a3-f16a21d75f884173a072",
+          "file": "eaapp.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 10137,
+                  "error": {
+                    "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\n    at /Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts:35:22",
+                    "location": {
+                      "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                      "column": 22,
+                      "line": 35
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m   \u001b[90m// Click text=Save\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Save'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/Employee/Index/1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[90m// Click text=Log off\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Log off'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                        "column": 22,
+                        "line": 35
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 33 |\u001b[39m   \u001b[90m// Click text=Save\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Save'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/Employee/Index/1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[90m// Click text=Log off\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Log off'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts:35:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-09-18T06:09:42.333Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                    "column": 22,
+                    "line": 35
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9aa4ae6f64de732190a3-35173402e1974b9d99f5",
+          "file": "eaapp.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 10201,
+                  "error": {
+                    "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\n    at /Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts:35:22",
+                    "location": {
+                      "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                      "column": 22,
+                      "line": 35
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m   \u001b[90m// Click text=Save\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Save'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/Employee/Index/1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[90m// Click text=Log off\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Log off'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                        "column": 22,
+                        "line": 35
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"http://eaapp.somee.com/Employee/Index/\u001b[7m1\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"http://eaapp.somee.com/Employee/Index/\u001b[7m4\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\u001b[2m  -   locator resolved to <html class=\" js flexbox flexboxlegacy canvas canvaste…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"http://eaapp.somee.com/Employee/Index/4\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 33 |\u001b[39m   \u001b[90m// Click text=Save\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Save'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'/Employee/Index/1'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[90m// Click text=Log off\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Log off'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts:35:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-09-18T06:09:42.342Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/hilalozakarli/Desktop/PlaywriteE2EAutomation/tests/eaapp.spec.ts",
+                    "column": 22,
+                    "line": 35
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9aa4ae6f64de732190a3-0b2185b218efb332a261",
+          "file": "eaapp.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
