@@ -10,10 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "totalTime": 38084.54800000001,
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -40,7 +37,7 @@
       {
         "outputDir": "/Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "id": "chromium",
         "name": "chromium",
         "testDir": "/Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/tests",
@@ -53,7 +50,7 @@
       {
         "outputDir": "/Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "id": "webkit",
         "name": "webkit",
         "testDir": "/Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/tests",
@@ -70,81 +67,11 @@
     "workers": 4,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "warehouse.spec.ts",
-      "file": "warehouse.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Navigate to Launge of Warehouse website",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "timedOut",
-                  "duration": 30000,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/tests/warehouse.spec.ts",
-                        "column": 22,
-                        "line": 19
-                      },
-                      "message": "Error: locator.hover: Page closed\n=========================== logs ===========================\nwaiting for getByRole('list').filter({ hasText: 'Winter Shopping Clothing, Shoes & Accessories' }).getByRole('link', { name: 'Home, Garden & Appliances' }).first()\n============================================================\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Home, Garden & Appliances'\u001b[39m })\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m homegarden\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(homegarden)\u001b[33m.\u001b[39mtoHaveId(\u001b[32m\"category-homegarden\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/tests/warehouse.spec.ts:19:22\u001b[22m"
-                    },
-                    {
-                      "message": "Pending operations:\n  - locator.hover at tests/warehouse.spec.ts:19:22\n"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-09-18T21:41:37.928Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/test-results/warehouse-Navigate-to-Launge-of-Warehouse-website-chromium/video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/test-results/warehouse-Navigate-to-Launge-of-Warehouse-website-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/hilalozakarli/Documents/GitHub/PlaywrightCICD/test-results/warehouse-Navigate-to-Launge-of-Warehouse-website-chromium/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "a645baeaf505bbc52b23-8977f175309d499d1734",
-          "file": "warehouse.spec.ts",
-          "line": 10,
-          "column": 5
-        }
-      ]
+      "message": "No tests found",
+      "stack": "Error: No tests found\n"
     }
-  ],
-  "errors": []
+  ]
 }
