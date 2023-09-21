@@ -2,12 +2,12 @@ const { chromium } = require('playwright');
 
 const mockResponseObject = {
     "posts": [
-        { "id": 1, "title": "E2E Automation Testing with Playwright", "author": "ExecuteAutomation" }
+        { "id": 1, "title": "E2E Automation Testing with Playwright", "author": "Tarik Deliktas" }
     ],
     "comments": [
-        { "id": 1, "body": "some comment", "postId": 1 }
+        { "id": 1, "body": "Test Release Cycle", "postId": 1 }
     ],
-    "profile": { "name": "executeautomation" }
+    "profile": { "name": "regression-testing" }
 };
 
 
