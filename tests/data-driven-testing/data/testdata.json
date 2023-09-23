@@ -1,0 +1,13 @@
+{
+    "Login": {
+        "userName": "admin",
+        "password": "password"
+    },
+    "User" : {
+        "Name": "TestAutoUser",
+        "Salary": "20000",
+        "DurationWorked": "40",
+        "Grade": "1",
+        "Email": "AutoUser@auto.com"
+    }
+}
